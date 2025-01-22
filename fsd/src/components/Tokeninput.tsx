@@ -12,7 +12,7 @@ function Tokeninput({ chain, onPairsFetched, onReset }) {
   
     const fetchPairs = async () => {
       const apiKey = process.env.REACT_APP_API_KEY;
-      console.log(apiKey)
+      
       const url =
         chain === "sol"
           ? `https://solana-gateway.moralis.io/token/mainnet/${tokenAddress}/pairs`
@@ -47,7 +47,7 @@ function Tokeninput({ chain, onPairsFetched, onReset }) {
     return (
       <div className='flex-col sm:flex'>
         <input 
-        className='text-white'
+        className=''
           style={{ marginBottom: "5%" }}
           type="text"
           placeholder="Enter Token Address"

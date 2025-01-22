@@ -2,6 +2,7 @@ import React,{useState,useRef,useEffect} from 'react';
 import Dropdown from './components/Dropdown.tsx';
 import Tokeninput from './components/Tokeninput.tsx';
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
 //import logo from './logo.svg';
 //import './App.css';
 
@@ -41,7 +42,7 @@ function App() {
   //console.log(chain)
   try {
     const apiKey = process.env.REACT_APP_API_KEY;
-    console.log(apiKey)
+    // console.log(apiKey)
     const currentTime = Math.floor(Date.now() / 1000);
     const fromDate = currentTime - 6 * 30 * 24 * 60 * 60;
     const toDate = currentTime;
