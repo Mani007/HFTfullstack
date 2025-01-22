@@ -6,9 +6,9 @@ function Dropdown({onSelect}) {
     <div className='m-10'>
     <label htmlFor="type of chain" className='text-white'>Select your chain </label>
     <select onChange={(e)=>onSelect(e.target.value)} defaultValue=''>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+        <option value="eth">Ethereum</option>
+        <option value="sol">Solona</option>
+        <option value="polygon">Polygon</option>
   
     </select>
     </div>
